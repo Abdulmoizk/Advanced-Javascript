@@ -1,0 +1,89 @@
+@font-face {
+    font-family: "nova";
+    src: url(fonts/NovaSquare-Regular.ttf);
+}
+
+* {
+    font-family: 'nova';
+}
+
+body {
+    margin: 0px;
+}
+
+.main {
+    background-image: url(images/How-to-Build-an-API-Driven-Weather-App.webp);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    padding-top: 15px;
+    position: relative;
+
+}
+
+.container {
+    width: 400px;
+    height: 600px;
+    border-radius: 50px;
+    background-image: url(images/360_F_461232389_XCYvca9n9P437nm3FrCsEIapG4SrhufP.jpg);
+    background-size: cover;
+    margin: 0 auto;
+    position: relative;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11), 0 4px 4px rgba(0, 0, 0, 0.11), 0 6px 8px rgba(0, 0, 0, 0.11), 0 8px 16px rgba(0, 0, 0, 0.11);
+    ;
+
+}
+
+.box {
+    width: 400px;
+    height: 600px;
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-size: cover;
+    margin: 0 auto;
+}
+
+.location {
+    border: none;
+    background: none;
+    margin-left: 85px;
+    margin-top: 50px;
+    font-size: 20px;
+    color: white;
+    /* font-weight: bold; */
+    letter-spacing: 1px;
+
+}
+
+.location:focus {
+    border: none;
+}
+
+.weather {
+    display: flex;
+}
+
+.weatherd {
+    margin-top: 0px;
+    font-size: 20px;
+    color: white;
+
+}
+
+.centi {
+    font-size: 45px;
+    padding: 0%;
+}
+
+.situation{
+ display: flex;
+ justify-content: space-around;
+color: white;
+text-shadow: 1px 1px 1px grey;
+letter-spacing: 1.5px;
+margin: 60px 0 ;
+}
+.situation>div{
+    text-align: center;
+}
+
