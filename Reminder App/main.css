@@ -1,0 +1,36 @@
+@font-face {
+    font-family: "nova";
+    src: url(fonts/NovaSquare-Regular.ttf);
+}
+
+* {
+    font-family: nova;
+}
+
+body {
+    margin: 0;
+}
+
+.main {
+    background-image: url(images/Why-Islam-Prayer-Space-.jpeg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.box {
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(85, 75, 75, 0.6);
+    position: absolute;
+}
+
+.namaz {
+    display: flex;
+    justify-content: space-evenly;
+    color: #000;
+    font-size: 30px;
+    text-shadow: 1px 1px 1px white;
+}

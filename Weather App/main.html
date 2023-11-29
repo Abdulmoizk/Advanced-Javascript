@@ -13,7 +13,7 @@
         <div class="container">
             <div class="box">
                 <div>
-                    <select name="Location" id="Location" class="location" required>
+                    <select id="city" onchange="city()" name="Location" id="Location" class="location" required>
                         <option value="" disabled selected>Select The City</option>
                         <option value="Islamabad">Islamabad</option>
                         <option value="" disabled>Punjab Cities</option>
@@ -262,31 +262,31 @@
                 <div class="weather">
                     <img width="200px" src="images/logo.png" alt="">
                     <div class="weatherd">
-                        <p class="centi">19°C</p>
-                        <p>Rainy </p>
-                        <p>Max:24°C Min:19°C</p>
+                        <p id="temp" class="centi">19°C</p>
+                        <p id="mode">Rainy </p>
+                        <p id="minmax">Max:24°C Min:19°C</p>
                     </div>
                 </div>
                 <div class="situation">
                     <div>
                         <p>Feel Like</p>
                         <img src="" alt="">
-                        <p>19.2</p>
+                        <p id="feellike">19.2</p>
                     </div>
                     <div>
                         <p>Humidity</p>
                         <img src="" alt="">
-                        <p>4.2</p>
+                        <p id="humidity">4.2</p>
                     </div>
                     <div>
                         <p>Wind</p>
                         <img src="" alt="">
-                        <p>5.3</p>
+                        <p id="wind">5.3</p>
                     </div>
                     <div>
                         <p>Visibility</p>
                         <img src="" alt="">
-                        <p>4km </p>
+                        <p id="visibility">4km </p>
                     </div>
                 </div>
 
@@ -294,7 +294,8 @@
         </div>
 
     </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>
