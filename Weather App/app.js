@@ -33,10 +33,10 @@ function city() {
     .then(res => {
       console.log(res);
       humidity.innerHTML = res.main.humidity;
-      feelLike.innerHTML = res.main.feels_like;
+      feelLike.innerHTML = `${Math.round(res.main.feels_like - 273.15)}°C`;
       wind.innerHTML = res.wind.speed;
-      temp.innerHTML = res.main.temp;
-      minmax.innerHTML = `Max:${res.main.temp_max} Min:${res.main.temp_min}`;
+      temp.innerHTML = `${Math.round(res.main.temp - 273.15)}°C`;
+      minmax.innerHTML = `Max:${Math.round(res.main.temp_max - 273.15)}°C Min:${Math.round(res.main.temp_min - 273.15)}°C`;
       visibility.innerHTML = res.visibility / 1000;
       mode.innerHTML = res.weather[0].main
     })

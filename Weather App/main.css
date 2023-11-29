@@ -69,6 +69,9 @@ body {
     color: white;
 
 }
+#minmax{
+    font-size: 15px;
+}
 
 .centi {
     font-size: 45px;
