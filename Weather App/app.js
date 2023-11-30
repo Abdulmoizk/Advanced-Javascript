@@ -18,6 +18,7 @@ let wind = document.getElementById("wind");
 let temp = document.getElementById("temp");
 let minmax = document.getElementById("minmax")
 let mode = document.getElementById("mode");
+let weatherLogo = document.getElementById("weatherLogo")
 
 function city() {
 
@@ -37,8 +38,14 @@ function city() {
       wind.innerHTML = res.wind.speed;
       temp.innerHTML = `${Math.round(res.main.temp - 273.15)}°C`;
       minmax.innerHTML = `Max:${Math.round(res.main.temp_max - 273.15)}°C Min:${Math.round(res.main.temp_min - 273.15)}°C`;
-      visibility.innerHTML = res.visibility / 1000;
-      mode.innerHTML = res.weather[0].main
+      visibility.innerHTML = res.visibility / 1000 + "km";
+      mode.innerHTML = res.weather[0].main;
+       mode = document.getElementById("mode");
+      if (mode.value === "Clouds"){
+      
+        weatherLogo.src ="images/cloudy.png"
+        
+      }
     })
     .catch(err => console.log(err))
 
