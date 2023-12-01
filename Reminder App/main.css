@@ -24,6 +24,7 @@ body {
     height: 100vh;
     width: 100%;
     background-color: rgba(85, 75, 75, 0.6);
+  
     position: absolute;
 }
 
@@ -32,5 +33,7 @@ body {
     justify-content: space-evenly;
     color: #000;
     font-size: 30px;
+
     text-shadow: 1px 1px 1px white;
+    
 }

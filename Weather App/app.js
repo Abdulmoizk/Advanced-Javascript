@@ -1,13 +1,24 @@
-//  let a = new Promise((resolve, reject) => {
-//   fetch ("https://api.openweathermap.org/data/2.5/weather?appid=1419554aaf4b164737467dbb5e1ce816")
-//   .then(res => res.json())
-//   .then(res => console.log("res>", res))
-//   .catch(err => console.log("err>", err))
-//  })
 
-//  a
-//  .then(res => console.log("res--->",res))
-//  .catch(err => console.log("err--->",err))
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", function() {
+    navigator.serviceWorker
+      .register("/serviceWorker.js")
+      .then(res => {
+        
+        
+        console.log("service worker registered")
+        Notification.requestPermission().then(res=>{
+          if(Notification.permission=='granted'){
+              console.log("Granted permission")
+              return
+          }
+          console.log(res)
+      })
+      })
+      .catch(err => console.log("service worker not registered", err))
+  })
+}
+
 
 
 let citi = document.getElementById("city");
